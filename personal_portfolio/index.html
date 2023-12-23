@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="Images/img2.png" class="logo">
+                 <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                 </ul>
+            </nav>
+            <div class="header-text">
+                <h1>AYA CHKIROU</h1>
+                <p>COMPUTER SCIENCE ENGINEERING STUDENT</p>
+                
+            </div>
+        </div>
+    </div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="Images/wp5.jpg" alt="">
+            </div>
+            <div class="about-col2">
+                <h1 class="sub_title">About Me</h1>
+                <p>Experienced and detail-oriented software developer with a versatile skill set encompassing HTML, CSS, JavaScript, C++, C, PHP,Laravel.
+                 Proven ability to deliver high-quality software solutions and a strong foundation in web development.</p>
+                 <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                    <p class="tab-links"onclick="opentab('Experience')"> Experience</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web development</span><br>HTML5/CSS3 </li>
+                        <li><span>Problem solver</span><br>C/C++</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Internship observation</span><br>OCP GROUPE </li>
+                        <li><span>WEB development</span><br>Training</li>
+                    </ul>
+                 </div>
+        </div>
+
+    </div>
+</div>
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+<div class="projects-list">
+    <div>
+        <h2>  First laravel project</h2>
+        <p>My inaugural Laravel project allowed me to immerse myself in the world of modern PHP web development, providing hands-on experience with Laravel's features and empowering me to take the next steps in my journey as a developer.</p>
+        <a href="#">Learn more</a>
+    </div>
+    <div>
+        <h2>Front end projects</h2>
+      <p>These front-end projects demonstrate my ability to create user-friendly interfaces, implement interactive features, and engagingly present my skills and professional experiences.</p>
+        <a href="#">Learn more</a>
+    </div>
+    <div>
+        <h2>Bookstore management</h2>
+               <p> Through this project, I gained valuable insights into algorithmic thinking, data structures, and file manipulation in C. It not only honed my programming skills but also provided a practical understanding.</p>
+        <a href="#">Learn more</a>
+    </div>
+</div>
+    </div>
+</div>
+<div id="images">
+    <div class="container">
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/wp6.jpg" >
+            </div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/wp3.jpg">
+                </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact</h1>
+        <!-- Autres éléments de la section de contact -->
+
+        <!-- Lien pour télécharger le CV -->
+        <p>Download my resume <a href="pdf/resume_aya_chkirou.pdf" target="_blank">here</a>.</p>
+    </div>
+</div>
+<div id="'contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact_left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>ayachkiro@gmail.com</p>
+                <p>0620210988</p>
+
+            </div>
+            <div class="contact_right">
+                <form>
+                    <input type="text" name="Name" placeholder="AYA CHKIROU" required>
+                    <input type="email" name="email" placeholder="ayachkiro@gmail.com" required>
+                    <textarea name="Message"  rows="6" placeholder="your message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+ 
+</div>
+<footer>
+    <p>&copy; 2023 AYA CHKIROU. Tous droits réservés.</p>
+   
+</footer>
+
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links")
+    var tabcontents= document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+
+</html>
